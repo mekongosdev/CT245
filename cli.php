@@ -1,3 +1,9 @@
+<?php
+
+// Require database & thông tin chung
+require_once 'core/autoload.php';
+
+?>
 <!DOCTYPE html>
 <html lang="vi" dir="ltr">
   <head>
