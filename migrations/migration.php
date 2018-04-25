@@ -22,14 +22,14 @@
 
      function createTableWithIdString() {
         $sql_create_table_with_id_string = "CREATE TABLE {$this->_table}(id CHAR(15) NOT NULL PRIMARY KEY);";
-        // echo $sql_create_table_with_id_string;
-        $qry_create_table_with_id_string = $db->query($sql_create_table_with_id_string);
+        echo $sql_create_table_with_id_string;
+        // $qry_create_table_with_id_string = $db->query($sql_create_table_with_id_string);
      }
 
      function createTableWithIdNum() {
         $sql_create_table_with_id_num = "CREATE TABLE {$this->_table}(id INT(15) NOT NULL AUTO_INCREMENT PRIMARY KEY);";
-        // echo $sql_create_table_with_id_num;
-        $qry_create_table_with_id_num = $db->query($sql_create_table_with_id_num);
+        echo $sql_create_table_with_id_num;
+        // $qry_create_table_with_id_num = $db->query($sql_create_table_with_id_num);
      }
 
      function up($colunmName = null, $datatype = null, $after = null) {
@@ -41,8 +41,8 @@
             } else {
                 $sql_up_table = "ALTER TABLE {$this->_table} ADD {$colunmName} {$datatype} AFTER {$after};";
             }
-            // echo $sql_up_table;
-            $qry_up_table = $db->query($sql_up_table);
+            echo $sql_up_table;
+            // $qry_up_table = $db->query($sql_up_table);
         }
      }
 
